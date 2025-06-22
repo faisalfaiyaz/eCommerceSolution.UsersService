@@ -45,7 +45,7 @@ namespace eCommerce.Core.Services
                 Email = registerRequest.Email,
                 Password = registerRequest.Password,
                 PersonName = registerRequest.PersonName,
-                Gender = registerRequest.gender.ToString()
+                Gender = registerRequest.Gender.ToString()
             };
 
             ApplicationUser? registeredUser = await _usersRepository.AddUser(user);
